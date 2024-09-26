@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:layout_height="match_parent"
+     android:background="#FDE9CB"
+     android:orientation="vertical"
+     android:id="@+id/main"
+     tools:context=".MainActivity">
+
+     <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/fareha_hassan_n_software_department_n_2k22_swe_38"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          android:lineHeight="0.2in"
+          android:textColor="#2196F3"
+          />
+
+
+     <Button
+          android:id="@+id/lab2btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#3949AB"
+          android:layout_margin="10dp"
+          android:text="@string/counter_lab2"
+          android:textColorHighlight="#D81B60"
+          android:textColorLink="#D81B60"
+          android:textSize="20sp" />
+     <Button
+          android:id="@+id/lab3btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#3949AB"
+          android:layout_margin="10dp"
+          android:text="@string/counter_lab3"
+          android:textColorHighlight="#D81B60"
+          android:textColorLink="#D81B60"
+          android:textSize="20sp" />
+     <Button
+          android:id="@+id/lab4btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#3949AB"
+          android:layout_margin="10dp"
+          android:text="@string/counter_4"
+          android:textColorHighlight="#D81B60"
+          android:textColorLink="#D81B60"
+          android:textSize="20sp" />
+</LinearLayout>

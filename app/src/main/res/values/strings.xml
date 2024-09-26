@@ -1,0 +1,8 @@
+<resources>
+     <string name="app_name">university_labs</string>
+     <string name="fareha_hassan_n_software_department_n_2k22_swe_38">Fareha Hassan \nSoftware Department \n2k22/swe/38</string>
+     <string name="counter_lab2">Counter : Lab2</string>
+     <string name="todo">TODO</string>
+     <string name="counter_lab3">Counter : Lab3</string>
+     <string name="counter_4">counter 4</string>
+</resources>
