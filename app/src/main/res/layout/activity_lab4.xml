@@ -13,37 +13,21 @@ android:gravity="center"
      tools:context=".lab4">
 
      <TextView
+          android:id="@+id/email_display"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Softwar Engineering"
           android:textSize="30sp"
           android:textStyle="bold"
-          android:textColor="#987892"
+          android:text="Email: "/>
 
-
-          />
-
-     <ImageView
-          android:src="@drawable/logooo"
-         android:layout_marginVertical="50sp"
-          android:layout_width="250sp"
-          android:layout_height="200sp"
-
-          android:contentDescription="TODO" />
-
-     <Button
-          android:id="@+id/webbtn"
+     <TextView
+          android:id="@+id/password_display"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:textSize="30sp"
+          android:textStyle="bold"
+          android:text="Password: "/>
 
-          android:text="New Page"
-            android:backgroundTint="#4769bd"
-     android:textSize="30sp"
-          android:fontFamily="sans-serif"
-
-
-
-          />
 
 
 </LinearLayout>

@@ -2,17 +2,18 @@ package com.example.university_labs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class lab3 extends AppCompatActivity {
 
-    EditText num1text , num2text;
-    Button calc;
-    TextView total;
+    EditText emailField, passwordField;
+    Button loginButton;
 
 
 
@@ -20,16 +21,27 @@ public class lab3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab3);
-        calc.setOnClickListener(new View.OnClickListener() {
+
+        emailField = findViewById(R.id.email_field);
+        passwordField = findViewById(R.id.password_field);
+        loginButton = findViewById(R.id.login_button);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                num1text.getText();
-                num2text.getText();
-                int num1 = Integer.parseInt(String.valueOf(num1text));
-                int num2 = Integer.parseInt(String.valueOf(num2text));
-               total.setText(num1 + num2);
+                String email = emailField.getText().toString();
+                String password = passwordField.getText().toString();
+
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(lab3.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    // Navigate to the next activity and pass the data
+                    Intent intent = new Intent(lab3.this, lab4.class);
+                    intent.putExtra("email", email);
+                    intent.putExtra("password", password);
+                    startActivity(intent);
+                }
             }
         });
-
     }
 }

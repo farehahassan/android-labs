@@ -9,68 +9,68 @@
      android:gravity="center"
      tools:context=".lab3">
 
-     <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          >
+
+
+
+          <ImageView
+               android:id="@+id/logo"
+               android:layout_width="200dp"
+               android:layout_height="100dp"
+               android:src="@drawable/logooo"
+               android:layout_gravity="center"/>
+
+
           <TextView
-               android:id="@+id/num1"
+               android:id="@+id/login_heading"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Num 1 : "
-               android:textSize="30sp"
+               android:text="Login"
+               android:fontFamily="cursive"
+               android:textSize="50sp"
                android:textStyle="bold"
-               />
+               android:layout_marginTop="20dp"
+               android:gravity="center"/>
+
 
           <EditText
-               android:id="@+id/num1text"
-               android:layout_width="200sp"
+               android:id="@+id/email_field"
+               android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:hint="Enter first number here.."
-               android:inputType="number"
-               android:layout_marginRight="10sp"/>
+               android:hint="Email"
+               android:inputType="textEmailAddress"
+               android:layout_marginTop="40dp"
+               android:padding="10dp"/>
 
-     </LinearLayout>
 
-     <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="20sp"
-          android:orientation="horizontal"
-          >
+          <EditText
+
+               android:id="@+id/password_field"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Password"
+
+               android:inputType="textPassword"
+               android:layout_marginTop="20dp"
+               android:padding="10dp"/>
+
+
+          <Button
+               android:id="@+id/login_button"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Login"
+               android:layout_marginTop="30dp"/>
+
+
           <TextView
-               android:id="@+id/num2"
+
+               android:id="@+id/already_account"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Num 2 : "
-               android:textSize="30sp"
-               android:textStyle="bold"
-               />
-
-          <EditText
-               android:id="@+id/num2text"
-               android:layout_width="200sp"
-               android:layout_height="wrap_content"
-               android:hint="Enter second number here.."
-               android:inputType="number"
-               android:layout_marginRight="10sp"/>
-
+               android:text="Already have an account?"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:textColor="#0000FF"/>
      </LinearLayout>
-     <Button
-          android:id="@+id/calc"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Click to Calculate"
-          android:textSize="30sp"
-          android:layout_marginTop="40sp"
-          />
-     <TextView
-          android:id="@+id/total"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-
-          android:layout_marginTop="20sp"/>
 
 
-</LinearLayout>
